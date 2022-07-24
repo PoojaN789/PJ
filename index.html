@@ -7,124 +7,189 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | 3-column preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      height: 500px;
-      width: 800px;
-      background-color: rgb(127, 179, 161);
-      margin-top: 6%;
-      margin-left: 20%;
-      border-radius: 8px;
-    }
-     .orange{background-color:hsl(31, 77%, 52%) ;
-     border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;}
-    .sedan {font-family:Lexend Deca;
-      font-size: 25px;
-      color: aliceblue;
-      margin-top: 44%;
-      margin-left: 20%;
-    }
-    .Sedan{color: aliceblue;
-    font-size: 20px;
-    justify-content: center;
-  margin-left: 4%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-margin-top: 18%;}
-
-.cyan{background-color:hsl(184, 100%, 22%) ;}
-.SUVS{font-family:Lexend Deca;
-      font-size: 25px;
-      color: aliceblue;
-      margin-top: 44%;
-      margin-left: 20%}
-      
-      .suvs{color: aliceblue;
-    font-size: 20px;
-    justify-content: center;
-  margin-left: 4%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-margin-top: 18%;
-}
-   
-.darkblue{background-color: hsl(179, 100%, 13%);
-border-top-right-radius: 8px;
-border-bottom-right-radius: 8px;}
-
-.LUXURY{font-family:Lexend Deca;
-      font-size: 25px;
-      color: aliceblue;
-      margin-top: 44%;
-      margin-left: 20%}
-
-      .luxury{color: aliceblue;
-    font-size: 20px;
-    justify-content: center;
-  margin-left: 4%;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-margin-top: 18%;}
-
-.LearnMore{background-color: aliceblue;
-color: orange;
-border-radius: 20px;
-height: 36px;
-border: none;
-width: 100px;
-margin-left: 10%;
-margin-top: 28%;}
-
-.LearnMore2{background-color: aliceblue;
-color:hsl(184, 100%, 22%);
-border-radius: 20px;
-height: 36px;
-border: none;
-width: 100px;
-margin-left: 10%;
-margin-top: 28%;
-
-}
-.LearnMore3{background-color: aliceblue;
-color: hsl(179, 100%, 13%)  ;
-border-radius: 20px;
-height: 36px;
-border: none;
-width: 100px;
-margin-left: 10%;
-margin-top: 28%;
-
-}
-   
-  </style>
 </head>
+
+<title>Frontend Mentor | [Challenge Name Here]</title>
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  body {
+    background-color: hsl(0, 0%, 81%);
+  }
+
+  .container {
+    display: grid;
+    height: 300px;
+    width: 700px;
+
+    margin-left: 18%;
+    margin-top: 6%;
+    grid-template-columns: 500px 200px;
+    column-gap: 10px;
+
+  }
+
+  .purple {
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 10px;
+    color: aliceblue;
+  }
+
+  .Daniel {
+    color: aliceblue;
+    font-size: medium;
+  }
+
+  .dp1 {
+    border-radius: 50%;
+    height: 30px;
+    border: aliceblue;
+    margin-left: 2%;
+  }
+
+  .para1 {
+    font-size: 18px;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 3%;
+  }
+
+  ;
+
+  .seconHalf {
+    margin-left: 3%;
+  }
+
+  .dp2 {margin-left: 2%;
+    border-radius: 50%;
+    border: aliceblue;
+    height: 30px;
+  }
+
+  .lightgrey {
+    height: 250px;
+    width: 190px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 9px;
+    margin-top: 5%;
+    color: aliceblue;
+  }
+
+  .rest {
+    font-size: 13px;
+    background-color: hsl(217, 19%, 35%);
+
+  }
+  .container2{ display: grid;
+    height: 258px;
+    width: 700px;
+    margin-left: 18%;
+    margin-top: 18%;
+    grid-template-columns: 230px 500px;
+    column-gap: 10px;
+    margin-top: 1.5%;
+ 
+
+  }
+  .white{background-color: antiquewhite;
+  border-radius: 9px;}
+  .dp3{margin-left: 2%;
+    border-radius: 50%;
+    border: aliceblue;
+    height: 30px;
+  }
+  .Jeanette{font-size: 14px;
+    color: rgb(13, 13, 14);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    margin-left: 3%;}
+    .wonderful{margin-top: 0.4%;
+    margin-left: 2%;}
+
+    .darkgrey{background-color:hsl(219, 29%, 14%) ;
+    border-radius: 9px;
+  color: aliceblue;}
+
+    .dp4{ border-radius: 50%;
+    height: 30px;
+    border: aliceblue;
+    margin-left: 2%;
+
+    }
+    .patrick{font-size: 15px;
+      font-weight: 900;
+
+    }
+    .END{margin-left: 2%;
+
+    }
+    
+</style>
 
 <body>
   <div class="container">
-    <div class="orange">
-    
-      <p class="sedan"><strong >SEDAN</strong></p>
-      <p class="Sedan"> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
-        or on your next road trip.</p>
-        <button class="LearnMore">Learn More</button>
+    <div class="purple">
+      <img class="dp1" src="images/image-daniel.jpg">
+      <p class="Daniel">Daniel Clifford
+        Verified Graduate</p>
+      <p class="para1">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so,
+        in the company I joined. I honestly feel I got every penny's worth.</p>
+      <p class="secondHalf">
+        “ I was an EMT for many years before I joined the bootcamp. I've been looking to make a
+        transition and have heard some people who had an amazing experience here. I signed up
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing
+        the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
     </div>
-   <div class="cyan">
-    <p class="SUVS"><strong>SUVS</strong></p>
-    <p class="suvs">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-      and off-road adventures.</p>
-      <button class="LearnMore2">Learn More</button>
-   </div>
-   <div class="darkblue">
- <p class="LUXURY"><strong>LUXURY</strong></p>
-  <p class="luxury"> Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-    rental and arrive in style.</p>
-    <button class="LearnMore3">Learn More</button>
-   </div>
+    <div class="lightgrey">
+      <img class="dp2" src="images/image-jonathan.jpg">
+      <p class="2">Jonathan Walters
+        Verified Graduate </p>
+
+      <p class="rest">The team was very supportive and kept me motivated
+
+        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+        for a big company. This was one of the best investments I’ve made in myself. ”
+      </p>
+    </div>
+
   </div>
+<div class="container2"> 
+  <div class="white">
+  <img class="dp3" src="images/image-jeanette.jpg">
+    <p class=oneinsecondcolumn>Jeanette Harmon
+    Verified Graduate</p>
+    <p class="Jeanette">
+    An overall wonderful and rewarding experience</p>
+   <p class="wonderful">
+    “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+    while doing something I love. ”</p>
+    </div>
+    <div class="darkgrey">
+    <img class="dp4" src="images/image-patrick.jpg">
+    Patrick Abrams
+  Verified Graduate
+  <p class="patrick">
+  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+  learning from their experiences was easy.</p>
+  <p class="END">
+  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+  junior developer. The standard is above the rest. You will get the personal attention you need from 
+  an incredible community of smart and amazing people. ”</p>
+
+
+    </div>
+    
+    
+  
+</div>
+
+
+
+
 </body>
 
 </html>
