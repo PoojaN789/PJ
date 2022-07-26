@@ -7,188 +7,167 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-</head>
 
-<title>Frontend Mentor | [Challenge Name Here]</title>
+  <title>Frontend Mentor | Single Price Grid Component</title>
 
-<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<style>
-  body {
-    background-color: hsl(0, 0%, 81%);
-  }
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(177, 62%, 93%);
+    }
 
-  .container {
-    display: grid;
-    height: 300px;
-    width: 700px;
+    .container {
+      display: grid;
+      height: 500px;
+      width: 560px;
+      background-color: burlywood;
+      margin-top: 4%;
+      margin-left: 30%;
+      border-radius: 9px;
+      grid-template-rows: 200px 300px;
+      box-shadow: grey 1px 1px 1px 1px;
+    }
 
-    margin-left: 18%;
-    margin-top: 6%;
-    grid-template-columns: 500px 200px;
-    column-gap: 10px;
+    .join {
+      font-family: cursive;
+      font-size: 20px;
+      color: hsl(179, 62%, 43%);
+      font-weight: 700;
+      margin-left: 5%;
+    }
 
-  }
+    .first-row {
+      background-color: white;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+    }
 
-  .purple {
-    background-color: hsl(263, 55%, 52%);
-    border-radius: 10px;
-    color: aliceblue;
-  }
 
-  .Daniel {
-    color: aliceblue;
-    font-size: medium;
-  }
-
-  .dp1 {
-    border-radius: 50%;
-    height: 30px;
-    border: aliceblue;
-    margin-left: 2%;
-  }
-
-  .para1 {
-    font-size: 18px;
-    color: aliceblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 3%;
-  }
-
-  ;
-
-  .seconHalf {
-    margin-left: 3%;
-  }
-
-  .dp2 {margin-left: 2%;
-    border-radius: 50%;
-    border: aliceblue;
-    height: 30px;
-  }
-
-  .lightgrey {
-    height: 250px;
-    width: 190px;
-    background-color: hsl(217, 19%, 35%);
-    border-radius: 9px;
-    margin-top: 5%;
-    color: aliceblue;
-  }
-
-  .rest {
-    font-size: 13px;
-    background-color: hsl(217, 19%, 35%);
-
-  }
-  .container2{ display: grid;
-    height: 258px;
-    width: 700px;
-    margin-left: 18%;
-    margin-top: 18%;
-    grid-template-columns: 230px 500px;
-    column-gap: 10px;
-    margin-top: 1.5%;
- 
-
-  }
-  .white{background-color: antiquewhite;
-  border-radius: 9px;}
-  .dp3{margin-left: 2%;
-    border-radius: 50%;
-    border: aliceblue;
-    height: 30px;
-  }
-  .Jeanette{font-size: 14px;
-    color: rgb(13, 13, 14);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 1000;
-    margin-left: 3%;}
-    .wonderful{margin-top: 0.4%;
-    margin-left: 2%;}
-
-    .darkgrey{background-color:hsl(219, 29%, 14%) ;
-    border-radius: 9px;
-  color: aliceblue;}
-
-    .dp4{ border-radius: 50%;
-    height: 30px;
-    border: aliceblue;
-    margin-left: 2%;
+    .days30 {
+      font-family: cursive;
+      font-size: 15px;
+      color: hsl(71, 73%, 54%);
+      font-weight: 700;
+      margin-left: 5%;
 
     }
-    .patrick{font-size: 15px;
-      font-weight: 900;
+
+    .gain {
+      color: hsl(195, 3%, 26%);
+      margin-left: 5%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: medium;
+    }
+
+    .darkb {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
     }
-    .END{margin-left: 2%;
 
+    .one {
+      background-color: hsl(179, 62%, 43%);
+      border-bottom-left-radius: 9px;
+      
+    }
+
+    .subscription {
+      font-size: 20px;
+      color: white;
+      margin-top: 5%;
+      margin-left: 6%;
+      font-family: cursive;
+    }
+
+    .price {
+      color: aliceblue;
+      margin-left: 5%;
+    }
+
+    .dollar {
+      font-size: xx-large;
+    }
+
+    .full {
+      color: aliceblue;
+      margin-left: 6%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .last {
+      background-color: hsl(187, 67%, 65%);
+    }
+
+    .whyUs {
+      color: aliceblue;
+      font-weight: 300;
+      font-size: 20px;
+      font-family: cursive;
+      margin-left: 4%;
+      align-self: center;
+      line-gap-override: 2;
     }
     
-</style>
+
+    .end {
+      color: aliceblue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-left: 4%;
+      margin-right: 4%;
+    }
+    .signup{height: 55px;
+    background-color:hsl(71, 73%, 54%) ;
+    margin-left: 4%;
+    font-size: 15px;
+     width: 230px;
+     border-radius: 9px;
+     color: aliceblue;
+       border: none;
+       font-weight: 600;
+      box-shadow: darkgray 1pc;}
+      .signup:hover{background-color: rgb(158, 231, 84);cursor: pointer;}
+  </style>
 
 <body>
   <div class="container">
-    <div class="purple">
-      <img class="dp1" src="images/image-daniel.jpg">
-      <p class="Daniel">Daniel Clifford
-        Verified Graduate</p>
-      <p class="para1">
-        I received a job offer mid-course, and the subjects I learned were current, if not more so,
-        in the company I joined. I honestly feel I got every penny's worth.</p>
-      <p class="secondHalf">
-        “ I was an EMT for many years before I joined the bootcamp. I've been looking to make a
-        transition and have heard some people who had an amazing experience here. I signed up
-        for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
-        The next 12 weeks was the best - and most grueling - time of my life. Since completing
-        the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
-      </p>
+    <div class="first-row">
+      <p class="join">Join our community </p>
+
+      <p class="days30"> 30-day, hassle-free money back guarantee</p>
+
+      <p class="gain"> Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.</p>
     </div>
-    <div class="lightgrey">
-      <img class="dp2" src="images/image-jonathan.jpg">
-      <p class="2">Jonathan Walters
-        Verified Graduate </p>
+    <div class="darkb">
+      <div class="one">
+        <p class="subscription">Monthly Subscription</p>
 
-      <p class="rest">The team was very supportive and kept me motivated
+        <p class="price"> <strong class="dollar">$25 </strong> per month</p>
 
-        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
-        for a big company. This was one of the best investments I’ve made in myself. ”
-      </p>
+        <p class="full"> Full access for less than &dollar;1 a day </p>
+        <br>
+
+          <button class="signup">Sign Up</button> 
+          
+        
+      </div>
+      <div class="last">
+
+        <p class="whyUs"> Why Us</p>
+
+        <p class="end">Tutorials by industry experts
+        Peer &amp; expert code review
+        Coding exercises
+        Access to our GitHub repos
+        Community forum
+        Flashcard decks
+        New videos every week.</p>
+      </div>
     </div>
 
   </div>
-<div class="container2"> 
-  <div class="white">
-  <img class="dp3" src="images/image-jeanette.jpg">
-    <p class=oneinsecondcolumn>Jeanette Harmon
-    Verified Graduate</p>
-    <p class="Jeanette">
-    An overall wonderful and rewarding experience</p>
-   <p class="wonderful">
-    “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-    while doing something I love. ”</p>
-    </div>
-    <div class="darkgrey">
-    <img class="dp4" src="images/image-patrick.jpg">
-    Patrick Abrams
-  Verified Graduate
-  <p class="patrick">
-  Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-  learning from their experiences was easy.</p>
-  <p class="END">
-  “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
-  gave me the confidence necessary to be able to go out in the world and present myself as a capable 
-  junior developer. The standard is above the rest. You will get the personal attention you need from 
-  an incredible community of smart and amazing people. ”</p>
 
-
-    </div>
-    
-    
-  
-</div>
-
-
-
+  </div>
 
 </body>
 
